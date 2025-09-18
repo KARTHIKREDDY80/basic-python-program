@@ -1,0 +1,11 @@
+user="karthik"
+pw=11
+u=input("enter a username")
+if u==user:
+  p=input("enter the password" )
+  if p==str(pw):
+    print("welcome")
+  else:
+    print("invalid password")
+else:
+  print("invalid username")
