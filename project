@@ -1,0 +1,87 @@
+print("Welcome to Food Delivery System")
+print("Choose your menu:")
+ch = int(input("Enter your choice (1, 2, 3, or 4): "))
+if ch == 1:
+    print("1 - Tiffen items")
+    print("Tiffen items - prices: dosa=20, idly=30, vada=25")
+    items = input("Enter the items you ate (dosa, idly, vada), separated by space: ").lower().split()
+    total_quantity = 0
+    total_cost = 0
+    for item in items:
+        if item == "dosa":
+            total_cost += 20
+            total_quantity += 1
+        elif item == "idly":
+            total_cost += 30
+            total_quantity += 1
+        elif item == "vada":
+            total_cost += 25
+            total_quantity += 1
+        else:
+            print("Item", item, "is not in the menu.")
+    print("Total quantity:", total_quantity)
+    print("Total cost: ₹", total_cost)
+elif ch == 2:
+    print("2 - Meals")
+    print("Meals - prices: rice with veg curry=70, chicken biryani=150, mutton biryani=250")
+    items = input("Enter the meals you ate (rice with veg curry, chicken biryani, mutton biryani), separated by comma: ").lower().split(",")
+    total_quantity = 0
+    total_cost = 0
+    for item in items:
+        item = item.strip()
+        if item == "rice with veg curry":
+            total_cost += 70
+            total_quantity += 1
+        elif item == "chicken biryani":
+            total_cost += 150
+            total_quantity += 1
+        elif item == "mutton biryani":
+            total_cost += 250
+            total_quantity += 1
+        else:
+            print("Item", item, "is not in the menu.")
+    print("Total quantity:", total_quantity)
+    print("Total cost: ₹", total_cost)
+elif ch == 3:
+    print("3 - Juices")
+    print("Juices - prices: orange juice=50, apple juice=60, mango juice=70")
+    items = input("Enter the juices you drank (orange juice, apple juice, mango juice), separated by comma: ").lower().split(",")
+    total_quantity = 0
+    total_cost = 0
+    for item in items:
+        item = item.strip()
+        if item == "orange juice":
+            total_cost += 50
+            total_quantity += 1
+        elif item == "apple juice":
+            total_cost += 60
+            total_quantity += 1
+        elif item == "mango juice":
+            total_cost += 70
+            total_quantity += 1
+        else:
+            print("Item", item, "is not in the menu.")
+    print("Total quantity:", total_quantity)
+    print("Total cost: ₹", total_cost)
+elif ch == 4:
+    print("4 - Snacks")
+    print("Snacks - prices: samosa=15, chakli=10, bhajiya=20")
+    items = input("Enter the snacks you ate (samosa, chakli, bhajiya), separated by space: ").lower().split()
+    total_quantity = 0
+    total_cost = 0
+    for item in items:
+        if item == "samosa":
+            total_cost += 15
+            total_quantity += 1
+        elif item == "chakli":
+            total_cost += 10
+            total_quantity += 1
+        elif item == "bhajiya":
+            total_cost += 20
+            total_quantity += 1
+        else:
+            print("Item", item, "is not in the menu.")
+    print("Total quantity:", total_quantity)
+    print("Total cost: ₹", total_cost)
+else:
+    print("EXIT")
