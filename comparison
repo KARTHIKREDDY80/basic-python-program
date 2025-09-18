@@ -1,0 +1,9 @@
+m=int(input("enter m"))
+n=int(input("enter n"))
+if m>n:
+      print(0)
+else:
+      s=0
+      for i in range(m,n+1):
+        s+=i**3
+      print(s)
